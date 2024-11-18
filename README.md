@@ -53,11 +53,11 @@ Altre occorrenze:
 
 Altri dettagli:
 
-il timestamp è in secondi
+- il timestamp è in secondi
 
-i ritardi sono in minuti
+- i ritardi sono in minuti
 
-
+<br />
 
 Uso del file degli oggetti:
 
