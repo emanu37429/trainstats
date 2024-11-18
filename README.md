@@ -46,9 +46,22 @@ Altre occorrenze:
       
       "dl": "Treno cancellato da TELESE CERRETO a ISERNIA. Il treno oggi arriva a AMOROSI MELIZZANO." //dettagli su deviazioni o limitazioni di percorso
 
+      "oo": "SARONNO" //stazione di origine programmata (in caso vi siano variazioni e sia diversa da quella effettiva)
+      
+      "od": "ALBAIRATE VERMEZZO" //stazione di arrivo programmata (in caso vi siano variazioni e sia diversa da quella effettiva)
+
 
 Altri dettagli:
 
 il timestamp è in secondi
 
 i ritardi sono in minuti
+
+
+
+Uso del file degli oggetti:
+
+1. Ricopiare il tutto nel vostro programma C#
+2. Usare una libreria per deserializzare i JSON, usando "Giorno" come tipo. Ad esempio, usando Newtonsoft.JSON:
+
+        var json = JsonConvert.DeserializeObject<Giorno>(new StreamReader(file.FullName).ReadToEnd());
