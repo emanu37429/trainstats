@@ -65,3 +65,6 @@ Uso del file degli oggetti:
 2. Usare una libreria per deserializzare i JSON, usando "Giorno" come tipo. Ad esempio, usando Newtonsoft.JSON:
 
         var json = JsonConvert.DeserializeObject<Giorno>(new StreamReader(file.FullName).ReadToEnd());
+
+## Update
+Per i dati da giorno 29/12/2024, usare il secondo file di oggetti in quanto è variato lo schema dei riassunti.
